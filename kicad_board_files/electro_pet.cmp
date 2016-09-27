@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Wed 14 Sep 2016 19:43:25 BST
+
+BeginCmp
+TimeStamp = /57C357B7;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C2F015;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = R3-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C2F5ED;
+Reference = SP1;
+ValeurCmp = SPEAKER;
+IdModule  = piezo_small_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C44A93;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = 3_pin_switch_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C5B972;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = right_angle_button_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C48356;
+Reference = SW3;
+ValeurCmp = SW_PUSH;
+IdModule  = right_angle_button_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CBEEB4;
+Reference = U1;
+ValeurCmp = 8X8_LED_MATRIX;
+IdModule  = 8x8_matrix_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C5F5AE;
+Reference = U2;
+ValeurCmp = SMALL_LIPO_CHARGER;
+IdModule  = small_lipo_charger;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CBEF1F;
+Reference = U3;
+ValeurCmp = ELECTRO_HAT;
+IdModule  = electro_hat_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CB075C;
+Reference = U4;
+ValeurCmp = 3.3_VOLTAGE_REG;
+IdModule  = AMS1117_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C2F22F;
+Reference = U5;
+ValeurCmp = MPU-6050;
+IdModule  = mpu-6050_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C5F5BD;
+Reference = U6;
+ValeurCmp = SMALL_DC_DC_BOOST;
+IdModule  = small_DC_DC_boost;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CB08C7;
+Reference = U7;
+ValeurCmp = ARDUINO_PRO_MICRO;
+IdModule  = arduino_leonardo;
+EndCmp
+
+BeginCmp
+TimeStamp = /57C2F67C;
+Reference = U8;
+ValeurCmp = BATTERY_CUSTOM;
+IdModule  = JST-PH_custom;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CBEF3F;
+Reference = U9;
+ValeurCmp = A3144;
+IdModule  = A3144_custom;
+EndCmp
+
+EndListe
