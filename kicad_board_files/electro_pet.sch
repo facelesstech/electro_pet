@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "15 sep 2016"
+Date "17 oct 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -267,15 +267,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 2300 4700 2300
 Wire Wire Line
-	4700 2300 4700 2150
-Wire Wire Line
-	4700 2150 5400 2150
-Wire Wire Line
-	5400 2150 5400 3250
-Wire Wire Line
-	5400 3250 4350 3250
-Wire Wire Line
-	2900 2650 3350 2650
+	2900 2650 4350 2650
 Connection ~ 4500 3350
 Connection ~ 4500 2750
 Wire Wire Line
@@ -391,4 +383,7 @@ Wire Wire Line
 	3750 6600 3000 6600
 Wire Wire Line
 	3000 6600 3000 6650
+Wire Wire Line
+	4350 2650 4350 3250
+Connection ~ 3350 2650
 $EndSCHEMATC
