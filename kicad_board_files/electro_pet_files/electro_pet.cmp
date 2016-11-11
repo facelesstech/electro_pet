@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Wed 14 Sep 2016 19:43:25 BST
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Wed 09 Nov 2016 19:54:06 GMT
 
 BeginCmp
 TimeStamp = /57C357B7;
@@ -50,10 +50,10 @@ IdModule  = 8x8_matrix_custom;
 EndCmp
 
 BeginCmp
-TimeStamp = /57C5F5AE;
+TimeStamp = /5823777F;
 Reference = U2;
-ValeurCmp = SMALL_LIPO_CHARGER;
-IdModule  = small_lipo_charger;
+ValeurCmp = LIPO_CHARGER_BOOSTER;
+IdModule  = lipo_charger_booster;
 EndCmp
 
 BeginCmp
@@ -75,13 +75,6 @@ TimeStamp = /57C2F22F;
 Reference = U5;
 ValeurCmp = MPU-6050;
 IdModule  = mpu-6050_custom;
-EndCmp
-
-BeginCmp
-TimeStamp = /57C5F5BD;
-Reference = U6;
-ValeurCmp = SMALL_DC_DC_BOOST;
-IdModule  = small_DC_DC_boost;
 EndCmp
 
 BeginCmp

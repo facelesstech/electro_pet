@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "17 oct 2016"
+Date "9 nov 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -79,17 +79,6 @@ F 3 "~" H 5300 6600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L BATTERY_CUSTOM U8
-U 1 1 57C2F67C
-P 5050 2350
-F 0 "U8" H 5050 2100 60  0000 C CNN
-F 1 "BATTERY_CUSTOM" H 5050 2750 60  0000 C CNN
-F 2 "~" H 5050 2650 60  0000 C CNN
-F 3 "~" H 5050 2650 60  0000 C CNN
-	1    5050 2350
-	0    -1   -1   0   
-$EndComp
-$Comp
 L R R1
 U 1 1 57C357B7
 P 4750 6050
@@ -103,13 +92,13 @@ $EndComp
 $Comp
 L SWITCH_INV SW1
 U 1 1 57C44A93
-P 3850 2350
-F 0 "SW1" H 3650 2500 50  0000 C CNN
-F 1 "SWITCH_INV" H 3700 2200 50  0000 C CNN
-F 2 "~" H 3850 2350 60  0000 C CNN
-F 3 "~" H 3850 2350 60  0000 C CNN
-	1    3850 2350
-	1    0    0    -1  
+P 2400 3450
+F 0 "SW1" H 2200 3600 50  0000 C CNN
+F 1 "SWITCH_INV" H 2250 3300 50  0000 C CNN
+F 2 "~" H 2400 3450 60  0000 C CNN
+F 3 "~" H 2400 3450 60  0000 C CNN
+	1    2400 3450
+	0    -1   -1   0   
 $EndComp
 $Comp
 L SW_PUSH SW3
@@ -133,146 +122,6 @@ F 3 "~" H 5650 5450 60  0000 C CNN
 	1    5650 5450
 	1    0    0    -1  
 $EndComp
-$Comp
-L SMALL_LIPO_CHARGER U2
-U 1 1 57C5F5AE
-P 2600 3300
-F 0 "U2" H 2950 3550 60  0000 C CNN
-F 1 "SMALL_LIPO_CHARGER" H 2600 3900 60  0000 C CNN
-F 2 "" H 2600 3300 60  0000 C CNN
-F 3 "" H 2600 3300 60  0000 C CNN
-	1    2600 3300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L SMALL_DC_DC_BOOST U6
-U 1 1 57C5F5BD
-P 4050 3350
-F 0 "U6" H 4400 3600 60  0000 C CNN
-F 1 "SMALL_DC_DC_BOOST" H 4050 4000 60  0000 C CNN
-F 2 "" H 4050 3350 60  0000 C CNN
-F 3 "" H 4050 3350 60  0000 C CNN
-	1    4050 3350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2700 4250 5100 4250
-Wire Wire Line
-	5200 4250 5200 4650
-Wire Wire Line
-	2850 4350 5200 4350
-Wire Wire Line
-	5800 4400 5800 3450
-Wire Wire Line
-	5800 3450 4800 3450
-Wire Wire Line
-	4800 3450 4800 4250
-Connection ~ 4800 4250
-Wire Wire Line
-	5300 4250 5300 5750
-Connection ~ 5300 4400
-Wire Wire Line
-	4300 5700 4300 6650
-Wire Wire Line
-	4200 5700 4200 6650
-Wire Wire Line
-	3550 4250 3550 5850
-Wire Wire Line
-	3550 5850 3350 5850
-Wire Wire Line
-	3350 5850 3350 5700
-Wire Wire Line
-	3150 5700 3150 6400
-Wire Wire Line
-	2850 4350 2850 5700
-Wire Wire Line
-	2850 5700 3150 5700
-Connection ~ 3900 4350
-Wire Wire Line
-	5200 5700 5200 6300
-Wire Wire Line
-	3650 4350 3650 6050
-Wire Wire Line
-	5400 6050 5400 6300
-Connection ~ 3650 4350
-Wire Wire Line
-	2900 3400 2900 4250
-Connection ~ 3550 4250
-Wire Wire Line
-	3200 3300 3200 4350
-Connection ~ 3200 4350
-Wire Wire Line
-	3100 2750 4700 2750
-Wire Wire Line
-	3100 2750 3100 3300
-Wire Wire Line
-	5200 5700 4900 5700
-Wire Wire Line
-	5400 6050 5000 6050
-Wire Wire Line
-	3650 6050 4500 6050
-Wire Wire Line
-	3350 2650 3350 2350
-Wire Wire Line
-	4700 2750 4700 2400
-Wire Wire Line
-	2850 6000 3150 6000
-Connection ~ 3150 6000
-Wire Wire Line
-	3250 5700 3250 6300
-Wire Wire Line
-	2850 5900 3250 5900
-Connection ~ 3250 5900
-Wire Wire Line
-	2850 6100 4200 6100
-Connection ~ 4200 6100
-Wire Wire Line
-	2850 6200 4300 6200
-Connection ~ 4300 6200
-Wire Wire Line
-	3150 6400 4400 6400
-Wire Wire Line
-	4400 6400 4400 6650
-Wire Wire Line
-	3250 6300 4500 6300
-Wire Wire Line
-	4500 6300 4500 6650
-Wire Wire Line
-	3400 6650 3400 6400
-Connection ~ 3400 6400
-Wire Wire Line
-	4700 5700 4700 5900
-Wire Wire Line
-	4700 5900 3750 5900
-Wire Wire Line
-	3750 5900 3750 6600
-Wire Wire Line
-	3200 3300 2900 3300
-Wire Wire Line
-	2900 3200 2900 2650
-Connection ~ 3100 3300
-Wire Wire Line
-	4100 4500 4100 4250
-Connection ~ 4100 4250
-Wire Wire Line
-	3900 4500 3900 4350
-Connection ~ 4600 4250
-Wire Wire Line
-	4350 3350 4500 3350
-Wire Wire Line
-	4500 2750 4500 4350
-Connection ~ 4500 4350
-Wire Wire Line
-	4350 2250 4350 2300
-Wire Wire Line
-	4350 2300 4700 2300
-Wire Wire Line
-	2900 2650 4350 2650
-Connection ~ 4500 3350
-Connection ~ 4500 2750
-Wire Wire Line
-	4350 3450 4350 4250
-Connection ~ 4350 4250
 $Comp
 L ARDUINO_PRO_MICRO U7
 U 1 1 57CB08C7
@@ -328,6 +177,104 @@ F 3 "~" H 5200 3950 60  0000 C CNN
 	1    5200 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L BATTERY_CUSTOM U8
+U 1 1 57C2F67C
+P 4850 3050
+F 0 "U8" H 4850 2800 60  0000 C CNN
+F 1 "BATTERY_CUSTOM" H 4850 3450 60  0000 C CNN
+F 2 "~" H 4850 3350 60  0000 C CNN
+F 3 "~" H 4850 3350 60  0000 C CNN
+	1    4850 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LIPO_CHARGER_BOOSTER U2
+U 1 1 5823777F
+P 3500 3050
+F 0 "U2" V 4000 3050 60  0000 C CNN
+F 1 "LIPO_CHARGER_BOOSTER" V 3000 3050 60  0000 C CNN
+F 2 "" H 3500 3150 60  0000 C CNN
+F 3 "" H 3500 3150 60  0000 C CNN
+	1    3500 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4250 5100 4250
+Wire Wire Line
+	5200 4250 5200 4650
+Wire Wire Line
+	2850 4350 5200 4350
+Wire Wire Line
+	5800 4400 5800 3450
+Wire Wire Line
+	5800 3450 4800 3450
+Wire Wire Line
+	4800 3450 4800 4250
+Connection ~ 4800 4250
+Wire Wire Line
+	5300 4250 5300 5750
+Connection ~ 5300 4400
+Wire Wire Line
+	4300 5700 4300 6650
+Wire Wire Line
+	4200 5700 4200 6650
+Wire Wire Line
+	3550 4250 3550 5850
+Wire Wire Line
+	3550 5850 3350 5850
+Wire Wire Line
+	3350 5850 3350 5700
+Wire Wire Line
+	3150 5700 3150 6400
+Wire Wire Line
+	2850 4350 2850 5700
+Wire Wire Line
+	2850 5700 3150 5700
+Connection ~ 3900 4350
+Wire Wire Line
+	5200 5700 5200 6300
+Wire Wire Line
+	3650 4350 3650 6050
+Wire Wire Line
+	5400 6050 5400 6300
+Connection ~ 3650 4350
+Connection ~ 3550 4250
+Wire Wire Line
+	5200 5700 4900 5700
+Wire Wire Line
+	5400 6050 5000 6050
+Wire Wire Line
+	3650 6050 4500 6050
+Wire Wire Line
+	2850 6000 3150 6000
+Connection ~ 3150 6000
+Wire Wire Line
+	3250 5700 3250 6300
+Wire Wire Line
+	2850 5900 3250 5900
+Connection ~ 3250 5900
+Wire Wire Line
+	2850 6100 4200 6100
+Connection ~ 4200 6100
+Wire Wire Line
+	2850 6200 4300 6200
+Connection ~ 4300 6200
+Wire Wire Line
+	3150 6400 4400 6400
+Wire Wire Line
+	4400 6400 4400 6650
+Wire Wire Line
+	3250 6300 4500 6300
+Wire Wire Line
+	4500 6300 4500 6650
+Wire Wire Line
+	3400 6650 3400 6400
+Connection ~ 3400 6400
+Wire Wire Line
+	3750 5900 3750 6600
+Connection ~ 4100 4250
+Connection ~ 4600 4250
 Wire Wire Line
 	5350 5850 5000 5850
 Wire Wire Line
@@ -357,7 +304,6 @@ Wire Wire Line
 	3300 6450 2700 6450
 Wire Wire Line
 	2700 6450 2700 4250
-Connection ~ 2900 4250
 Wire Wire Line
 	6100 4650 5200 4650
 Connection ~ 5200 4350
@@ -384,6 +330,33 @@ Wire Wire Line
 Wire Wire Line
 	3000 6600 3000 6650
 Wire Wire Line
-	4350 2650 4350 3250
-Connection ~ 3350 2650
+	3750 5900 4600 5900
+Wire Wire Line
+	4600 5900 4600 5700
+Wire Wire Line
+	3900 4050 3900 4500
+Wire Wire Line
+	2900 4050 3900 4050
+Wire Wire Line
+	4100 4250 4100 4150
+Wire Wire Line
+	4100 4150 2600 4150
+Wire Wire Line
+	2600 4150 2600 3950
+Wire Wire Line
+	4500 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 2900
+Wire Wire Line
+	4500 3100 4100 3100
+Wire Wire Line
+	4100 3100 4100 3200
+Wire Wire Line
+	2900 2750 2300 2750
+Wire Wire Line
+	2300 2750 2300 2950
+Wire Wire Line
+	2600 3950 2400 3950
+Wire Wire Line
+	2900 4050 2900 3350
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Tue 27 Sep 2016 11:38:55 BST
+update=Wed 09 Nov 2016 19:53:32 GMT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -52,10 +52,10 @@ LibName31=/home/facelessloser/Dropbox/kicad/my_stuff/My_stuff
 version=1
 LastNetListRead=electro_pet.net
 UseCmpFile=1
-PadDrill=2.000000000000
-PadDrillOvalY=2.000000000000
-PadSizeH=2.500000000000
-PadSizeV=2.500000000000
+PadDrill=1.200000000000
+PadDrillOvalY=1.200000000000
+PadSizeH=1.800000000000
+PadSizeV=1.800000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -99,3 +99,4 @@ LibName27=/home/facelessloser/Dropbox/kicad/my_stuff/A3144_custom
 LibName28=/home/facelessloser/Dropbox/kicad/my_stuff/3_pin_switch_custom
 LibName29=/home/facelessloser/Dropbox/kicad/my_stuff/M3_bolt_nut_custom
 LibName30=/home/facelessloser/Dropbox/kicad/my_stuff/OSH_final_silks_back
+LibName31=/home/facelessloser/Dropbox/kicad/my_stuff/lipo_charger_booster
