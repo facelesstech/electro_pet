@@ -1,4 +1,4 @@
-update=Tue 25 Oct 2016 20:20:41 BST
+update=Tue 01 Nov 2016 19:57:31 GMT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -85,7 +85,7 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-LibName17=/home/facelessloser/Dropbox/kicad/my_stuff/electro_hat_male_custom
-LibName18=/home/facelessloser/Downloads/svg2mod-master/new_hat
-LibName19=/home/facelessloser/Downloads/svg2mod-master/new_fluff
-LibName20=/home/facelessloser/Dropbox/kicad/my_stuff/OSH_final_silks_back
+LibName17=/home/facelessloser/Downloads/svg2mod-master/new_hat
+LibName18=/home/facelessloser/Downloads/svg2mod-master/new_fluff
+LibName19=/home/facelessloser/Dropbox/kicad/my_stuff/OSH_final_silks_back
+LibName20=/home/facelessloser/Dropbox/kicad/my_stuff/electro_hat_mirrored
