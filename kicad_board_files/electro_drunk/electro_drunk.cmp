@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Tue 01 Nov 2016 15:47:25 GMT
+
+BeginCmp
+TimeStamp = /5818B310;
+Reference = U1;
+ValeurCmp = ELECTRO_HAT;
+IdModule  = electro_hat_male_mirrored;
+EndCmp
+
+BeginCmp
+TimeStamp = /5818B562;
+Reference = U2;
+ValeurCmp = MQ-3;
+IdModule  = MQ-3_custom;
+EndCmp
+
+EndListe
