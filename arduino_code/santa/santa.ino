@@ -1,3 +1,18 @@
+// ----------------------
+// Left button - pin 16
+// Right button - pin 14
+// Speaker - pin 9
+// Hall effect - pin 8
+// ----------------------
+// Hat pins, right to left
+// GND
+// VCC 
+// SCL
+// SDA
+// PIN 6 
+// PIN 10
+// ----------------------
+
 // RTTTL
 #include <rtttl.h>
 ProgmemPlayer player(9);

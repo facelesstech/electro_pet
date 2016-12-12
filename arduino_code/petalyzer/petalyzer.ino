@@ -1,3 +1,18 @@
+// ----------------------
+// Left button - pin 16
+// Right button - pin 14
+// Speaker - pin 9
+// Hall effect - pin 8
+// ----------------------
+// Hat pins, right to left
+// GND
+// VCC 
+// SCL
+// SDA
+// PIN 6 
+// PIN 10
+// ----------------------
+
 #include <Wire.h>
 #include "Adafruit_LEDBackpack.h"
 #include "Adafruit_GFX.h"
@@ -23,7 +38,6 @@ int minReading; // Lowest number as base
 int maxReading;  // Max reading 
 int adding = 400; // Number to be added to the minReading
 int drunkLevel; // Store the mapped sensor value
-
 
 int screenX; // The x axis on the load screen
 int screenY = 0; // The y axis on the load screen
@@ -88,8 +102,15 @@ void loop() {
 
   int reading = digitalRead(buttonPin); // Read button
   int reading1 = digitalRead(buttonPin1); // Read button
-  int sensor = analogRead(analogPin); // Reads the analogPin
+  int sensor = analogRead(analogPin); // Reads the analogPinA
+
+// Debug code
+//  Serial.print("Drunk level ");
 //  Serial.println(drunkLevel);
+//  Serial.print("minReading  ");
+//  Serial.println(minReading);
+//  Serial.print("maxReading  ");
+//  Serial.println(maxReading);
 
   if (readMode == true)
   {
@@ -97,6 +118,7 @@ void loop() {
     while(millis() <= readingSensorWait)
     {
 //      Serial.println("Blow now");
+      int sensor = analogRead(analogPin); // Reads the analogPinA
       drunkLevel = map(sensor, minReading, maxReading,0, 10);
       matrix.clear(); // Clear screen
       matrix.setRotation(0); // Rotate to the upright 
@@ -113,6 +135,7 @@ void loop() {
     while(millis() <= resetingSensorWait)
     {
 //      Serial.println("Reseting");
+      int sensor = analogRead(analogPin); // Reads the analogPinA
       minReading = sensor; // Sets the minReading to the curren sensor reading
       maxReading = sensor + adding; // Adds to the minReading to give you max reading
       matrix.clear(); // Clear screen
