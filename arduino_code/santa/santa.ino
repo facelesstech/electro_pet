@@ -37,8 +37,10 @@ int16_t gx, gy, gz;
 const int santaLED = 10;
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
-unsigned long waitUntilpulse1 = 0;  // Millis wait times
-unsigned long waitUntilpulse2 = 20;  // Millis wait times
+unsigned long blinkSince = 0;  // Millis wait times
+unsigned long blinkWait = 40;  // Millis wait times
+unsigned long blinkSince1 = 0;  // Millis wait times
+unsigned long blinkWait1 = 40;  // Millis wait times
 
 // Hall effect sensor
 const int hallPin = 8; // the number of the hall effect sensor pin
@@ -147,20 +149,23 @@ void loop() {
   int reading1 = digitalRead(buttonPin1);
 
 
-// Santa hat code..... Untested
-  if (millis() >= waitUntilpulse1) {
+// Santa hat coded
+  if (millis() - blinkSince >= blinkWait) {
+    blinkSince = millis();
     analogWrite(santaLED, brightness);
     brightness = brightness + fadeAmount;
-    waitUntilpulse1 += 40;
   }
+  
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ; 
   }
-  if (millis() >= waitUntilpulse2) {
+
+  if (millis() - blinkSince1 >= blinkWait1) {
+    blinkSince1 = millis();
     analogWrite(santaLED, brightness);
     brightness = brightness + fadeAmount;
-    waitUntilpulse2 += 40;
   }
+
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ; 
   }   

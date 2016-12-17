@@ -13,6 +13,15 @@
 // PIN 10
 // ----------------------
 
+// Hat
+const int santaLED = 10;
+int brightness = 0;    // how bright the LED is
+int fadeAmount = 5;    // how many points to fade the LED by
+unsigned long blinkSince = 0;  // Millis wait times
+unsigned long blinkWait = 40;  // Millis wait times
+unsigned long blinkSince1 = 0;  // Millis wait times
+unsigned long blinkWait1 = 40;  // Millis wait times
+
 // LED matrix
 #include <Wire.h>
 #include "Adafruit_LEDBackpack.h"
@@ -73,6 +82,8 @@ void setup() {
   pinMode(buttonPin, INPUT_PULLUP);
   pinMode(buttonPin1, INPUT_PULLUP);
 
+  pinMode(santaLED, OUTPUT); // Set santa hat led
+
   randomSeed(analogRead(0));
 }
 
@@ -81,14 +92,35 @@ static const uint8_t PROGMEM
   snowMan[] =
   { B00000000,
     B00000000,
-    B00000000,
     B00011000,
     B00111100,
     B00011000,
+    B00111100,
     B00111100,
     B00011000 };
 
 void loop() {
+
+// Santa hat coded
+  if (millis() - blinkSince >= blinkWait) {
+    blinkSince = millis();
+    analogWrite(santaLED, brightness);
+    brightness = brightness + fadeAmount;
+  }
+  
+  if (brightness == 0 || brightness == 255) {
+    fadeAmount = -fadeAmount ; 
+  }
+
+  if (millis() - blinkSince1 >= blinkWait1) {
+    blinkSince1 = millis();
+    analogWrite(santaLED, brightness);
+    brightness = brightness + fadeAmount;
+  }
+
+  if (brightness == 0 || brightness == 255) {
+    fadeAmount = -fadeAmount ; 
+  }   
 
   hallState = digitalRead(hallPin);
   int reading = digitalRead(buttonPin);
